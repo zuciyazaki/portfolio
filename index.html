@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominic Metz (Zuciya Zaki) - SOC Analyst in training with 50+ day learning streak. Top 6% on TryHackMe. Building security tools and pursuing cybersecurity excellence.">
-    <meta name="keywords" content="SOC Analyst, Cybersecurity, TryHackMe, Security Tools, Penetration Testing, Blue Team, Red Team">
+    <meta name="description" content="Dominic Metz (Zuciya Zaki) - SOC Analyst in training with 62-day learning streak. Top 6% on TryHackMe (Rank 99,610). Built arsenal.zuciyazaki.com with 130+ Wireshark filters, custom Python security tools, and production infrastructure.">
+    <meta name="keywords" content="SOC Analyst, Cybersecurity, TryHackMe, Security Tools, Wireshark, Penetration Testing, Blue Team, Red Team, Arsenal">
     <meta name="author" content="Dominic Metz (Zuciya Zaki)">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zuciyazaki.com">
-    <meta property="og:title" content="Zuciya Zaki - Cybersecurity Specialist in Training">
-    <meta property="og:description" content="50+ day learning streak | Top 6% TryHackMe | Building security tools | Future SOC Analyst">
+    <meta property="og:title" content="Zuciya Zaki - Building Cybersecurity Arsenal">
+    <meta property="og:description" content="62-day streak | Top 6% TryHackMe | 90 rooms completed | arsenal.zuciyazaki.com | Custom security tools">
     
-    <title>Zuciya Zaki - Cybersecurity Specialist in Training</title>
+    <title>Zuciya Zaki - Cybersecurity Arsenal Builder</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom Styles -->
     <style>
@@ -32,7 +35,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(to right, #10b981, #06b6d4);
+            background: linear-gradient(to right, #06b6d4, #8b5cf6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -44,17 +47,7 @@
         
         .card-hover:hover {
             transform: translateY(-4px);
-            border-color: rgba(16, 185, 129, 0.5);
-        }
-        
-        .typing-cursor::after {
-            content: '_';
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+            border-color: rgba(6, 182, 212, 0.5);
         }
         
         @keyframes fadeInUp {
@@ -90,19 +83,19 @@
     <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center font-bold text-white">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center font-bold text-white">
                     ZZ
                 </div>
                 <div>
                     <div class="font-bold text-lg gradient-text">Zuciya Zaki</div>
-                    <div class="text-xs text-slate-500">Cybersecurity Specialist</div>
+                    <div class="text-xs text-slate-500">SOC Analyst in Training</div>
                 </div>
             </div>
             <nav class="hidden md:flex items-center gap-6">
-                <a href="#story" class="text-sm text-slate-400 hover:text-emerald-400 transition-colors">Story</a>
-                <a href="#tools" class="text-sm text-slate-400 hover:text-emerald-400 transition-colors">Tools</a>
-                <a href="#skills" class="text-sm text-slate-400 hover:text-emerald-400 transition-colors">Skills</a>
-                <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+                <a href="#path" class="text-sm text-slate-400 hover:text-cyan-400 transition-colors">The Path</a>
+                <a href="#arsenal" class="text-sm text-slate-400 hover:text-cyan-400 transition-colors">Arsenal</a>
+                <a href="#projects" class="text-sm text-slate-400 hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
                     Let's Connect
                 </a>
             </nav>
@@ -112,183 +105,279 @@
     <!-- Hero Section -->
     <section class="max-w-6xl mx-auto px-6 py-20 md:py-32">
         <div class="text-center fade-in-up">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-400 text-sm mb-8">
-                <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm mb-8">
+                <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
                 <span>Available for SOC Analyst Opportunities</span>
             </div>
             
             <h1 class="text-4xl md:text-6xl font-bold mb-4">
                 <div class="text-slate-100 mb-2">Dominic Metz</div>
-                <div class="gradient-text typing-cursor" id="typing-text">aka Zuciya Zaki</div>
+                <div class="gradient-text">aka Zuciya Zaki</div>
             </h1>
             
             <p class="text-xl md:text-2xl text-slate-400 mb-6">
-                Cybersecurity Specialist in Training
+                Building My Cybersecurity Arsenal
             </p>
             
             <div class="flex flex-wrap justify-center gap-6 mb-12 text-slate-300">
                 <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                    <span class="text-sm md:text-base"><span class="font-bold text-emerald-400" id="streak-counter">50+</span> Day Learning Streak</span>
-                </div>
-                <div class="flex items-center gap-2">
                     <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                    <span class="text-sm md:text-base">Top <span class="font-bold text-cyan-400">6%</span> on TryHackMe</span>
+                    <span class="text-sm md:text-base"><span class="font-bold text-cyan-400">62-Day</span> Unbroken Streak</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
-                    <span class="text-sm md:text-base"><span class="font-bold text-purple-400">1,900+</span> Learning Events</span>
+                    <span class="text-sm md:text-base">Top <span class="font-bold text-purple-400">6%</span> on TryHackMe</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                    <span class="text-sm md:text-base"><span class="font-bold text-emerald-400">90</span> Rooms Completed</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span class="text-sm md:text-base"><span class="font-bold text-yellow-400">19</span> Badges Earned</span>
                 </div>
             </div>
             
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://tools.zuciyazaki.com" target="_blank" class="px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center gap-2">
-                    🛠️ View Security Tools
+                <a href="https://arsenal.zuciyazaki.com" target="_blank" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center gap-2">
+                    <i class="fas fa-shield-alt"></i> View My Arsenal
                 </a>
-                <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold transition-colors flex items-center gap-2">
-                    📧 Let's Connect
+                <a href="https://tools.zuciyazaki.com" target="_blank" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                    <i class="fas fa-wrench"></i> Security Tools
+                </a>
+                <a href="https://blog.zuciyazaki.com" target="_blank" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                    <i class="fas fa-blog"></i> Blog
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="max-w-4xl mx-auto px-6 py-16 scroll-reveal">
+    <!-- Arsenal Showcase -->
+    <section id="arsenal" class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
+        <div class="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-lg p-8 md:p-12">
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fas fa-shield-alt text-4xl text-cyan-400"></i>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text">arsenal.zuciyazaki.com</h2>
+                    <p class="text-slate-400">Comprehensive Wireshark filter reference for SOC analysts</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-slate-800/50 border border-cyan-500/20 rounded-lg p-6">
+                    <div class="text-5xl font-bold text-cyan-400 mb-2">130+</div>
+                    <div class="text-slate-300 font-semibold">Wireshark Filters</div>
+                    <div class="text-sm text-slate-500">Packet analysis coverage</div>
+                </div>
+                <div class="bg-slate-800/50 border border-purple-500/20 rounded-lg p-6">
+                    <div class="text-5xl font-bold text-purple-400 mb-2">13</div>
+                    <div class="text-slate-300 font-semibold">Categories</div>
+                    <div class="text-sm text-slate-500">From basics to threat hunting</div>
+                </div>
+                <div class="bg-slate-800/50 border border-emerald-500/20 rounded-lg p-6">
+                    <div class="text-5xl font-bold text-emerald-400 mb-2">100%</div>
+                    <div class="text-slate-300 font-semibold">Free Forever</div>
+                    <div class="text-sm text-slate-500">Real SOC use cases</div>
+                </div>
+            </div>
+            
+            <div class="bg-slate-900/50 border border-cyan-500/20 rounded-lg p-6 mb-6">
+                <h3 class="font-semibold text-cyan-400 mb-3 flex items-center gap-2">
+                    <i class="fas fa-star"></i> Arsenal Features
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>Real-time search across all filters</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>One-click copy-to-clipboard</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>Collapsible categories for navigation</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>"Most Copied" community tracking</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>Threat detection badges</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fas fa-check text-cyan-400 mt-1"></i>
+                        <span>Practical SOC analyst context</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://arsenal.zuciyazaki.com" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                <i class="fas fa-external-link-alt"></i>
+                Explore the Arsenal
+            </a>
+        </div>
+    </section>
+
+    <!-- The Path Section -->
+    <section id="path" class="max-w-4xl mx-auto px-6 py-16 scroll-reveal">
         <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8 md:p-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">The Journey</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">The Path to SOC Analyst</h2>
             
             <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
                 <p>
-                    While working <strong class="text-emerald-400">7-day maritime schedules</strong>, I made a decision: pursue the cybersecurity career I'd always been interested in. Not someday. <strong class="text-cyan-400">Now</strong>.
+                    Becoming a SOC analyst isn't about collecting certifications or watching tutorials. It's about <strong class="text-cyan-400">building practical skills daily</strong>, understanding both attack and defense, and creating real infrastructure.
                 </p>
                 
                 <p>
-                    <strong class="text-emerald-400">50+ days ago</strong>, I started. I haven't missed a day.
+                    The path requires <strong class="text-purple-400">consistent execution</strong>. Not motivation. Not inspiration. <strong class="text-cyan-400">Discipline</strong>. Show up every day, even when you don't feel like it. Especially when you don't feel like it.
+                </p>
+                
+                <p class="text-2xl font-bold text-cyan-400 my-6 border-l-4 border-cyan-400 pl-4">
+                    "That's the Zaki way."
                 </p>
                 
                 <p>
-                    I don't just consume training materials — I <strong class="text-cyan-400">BUILD</strong>. I think outside the box. I create tools that solve problems I encounter. I approach challenges strategically, not just tactically.
+                    This journey means <strong class="text-purple-400">building over consuming</strong>. Create tools. Deploy infrastructure. Document the process. Don't just take courses—apply what you learn immediately in practical projects that demonstrate real capability.
                 </p>
                 
                 <p>
-                    I'm not waiting to become a cybersecurity specialist. <strong class="gradient-text">I'm already becoming one, one day at a time.</strong>
+                    Understanding <strong class="text-cyan-400">both offensive and defensive security</strong> is critical. You can't defend what you don't understand. Red team knowledge makes you a better blue team operator. Study attacks to build better defenses.
                 </p>
-            </div>
-            
-            <!-- Timeline -->
-            <div class="mt-12 pt-8 border-t border-slate-700">
-                <div class="flex items-center justify-between text-sm">
-                    <div class="text-slate-400">Day 1</div>
-                    <div class="flex-1 mx-4 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
-                    <div class="text-emerald-400 font-bold" id="timeline-day">Day 50+</div>
-                    <div class="flex-1 mx-4 h-1 bg-slate-700 rounded-full"></div>
-                    <div class="text-slate-400">SOC Analyst L1</div>
-                </div>
-                <div class="flex justify-between text-xs text-slate-500 mt-2">
-                    <span>Started TryHackMe</span>
-                    <span>Security+ Certified</span>
-                    <span>First Role (3-6 months)</span>
-                </div>
+                
+                <p>
+                    The roadmap: <strong class="text-emerald-400">Hands-on labs</strong> (TryHackMe, HackTheBox), <strong class="text-cyan-400">custom tool development</strong> (Python, Bash), <strong class="text-purple-400">production infrastructure</strong> (VPS, DNS, SSL), and <strong class="text-yellow-400">continuous documentation</strong> (blogs, portfolios, GitHub).
+                </p>
+                
+                <p>
+                    My commitment: <strong class="text-cyan-400">62 consecutive days</strong> of learning and building. Top <strong class="text-purple-400">6% on TryHackMe</strong>. <strong class="text-emerald-400">90 rooms completed</strong>. Three production websites deployed. Five custom security tools built. Not because it's easy, but because <strong class="text-cyan-400">consistency compounds</strong>.
+                </p>
+                
+                <p>
+                    Target role: <strong class="text-cyan-400">SOC Analyst Level 1</strong> within <strong class="text-purple-400">Q2-Q3 2026</strong>. The foundation is being built daily. The skills are being sharpened constantly. The portfolio speaks for itself.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Tools Section -->
-    <section id="tools" class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">What I've Built</h2>
-            <p class="text-slate-400 text-lg">I don't just talk about cybersecurity — I build tools that demonstrate real capabilities.</p>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 gradient-text text-center">Projects & Tools</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <!-- Password Analyzer -->
-            <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 card-hover">
-                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center mb-4 text-2xl">
-                    🔐
-                </div>
-                <h3 class="text-xl font-bold text-orange-400 mb-2">Password Analyzer</h3>
-                <p class="text-slate-400 text-sm mb-4">Analyzes password strength against real attack methods. Checks rockyou.txt wordlist, detects patterns, estimates crack time.</p>
-                <a href="https://tools.zuciyazaki.com" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1">
-                    Try it live →
-                </a>
-            </div>
-            
-            <!-- Hash Identifier -->
-            <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 card-hover">
-                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center mb-4 text-2xl">
-                    #️⃣
-                </div>
-                <h3 class="text-xl font-bold text-emerald-400 mb-2">Hash Identifier</h3>
-                <p class="text-slate-400 text-sm mb-4">Identifies hash types and generates John the Ripper and Hashcat cracking commands. Essential for CTF challenges.</p>
-                <a href="https://tools.zuciyazaki.com" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1">
-                    Try it live →
-                </a>
-            </div>
-            
-            <!-- Base64 Tool -->
-            <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 card-hover">
-                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-4 text-2xl">
-                    🔄
-                </div>
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Base64 Encoder/Decoder</h3>
-                <p class="text-slate-400 text-sm mb-4">Fast two-way Base64 conversion for CTF challenges, web security analysis, and data transfer scenarios.</p>
-                <a href="https://tools.zuciyazaki.com" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1">
-                    Try it live →
-                </a>
-            </div>
-        </div>
-        
-        <!-- Python Tools -->
-        <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/30 rounded-lg p-8">
-            <h3 class="text-xl font-bold text-slate-100 mb-4">Python CLI Tools</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div class="flex items-start gap-3">
-                    <div class="text-emerald-400 mt-1">▸</div>
-                    <div>
-                        <div class="font-semibold text-slate-200">zaki-john.py</div>
-                        <div class="text-slate-400">Hash cracking automation & reference</div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Arsenal Site -->
+            <div class="bg-slate-800/30 border border-cyan-500/30 rounded-lg p-6 card-hover">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-shield-alt text-3xl text-cyan-400"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-100">Arsenal (Wireshark Filters)</h3>
+                            <div class="text-sm text-slate-400">React • Real-time Search • Production</div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-cyan-400 mt-1">▸</div>
-                    <div>
-                        <div class="font-semibold text-slate-200">zaki-msf.py</div>
-                        <div class="text-slate-400">Metasploit Framework quick reference</div>
-                    </div>
+                <p class="text-slate-300 mb-4 text-sm">
+                    Comprehensive Wireshark filter reference with real SOC analyst context. Features real-time search, copy-to-clipboard, collapsible sections, and "Most Copied" tracking system.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded text-xs">React</span>
+                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">Tailwind CSS</span>
+                    <span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs">130+ Filters</span>
                 </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-purple-400 mt-1">▸</div>
-                    <div>
-                        <div class="font-semibold text-slate-200">zaki-linux.py</div>
-                        <div class="text-slate-400">170+ Linux commands reference</div>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-orange-400 mt-1">▸</div>
-                    <div>
-                        <div class="font-semibold text-slate-200">zaki-cert-mastery.py</div>
-                        <div class="text-slate-400">Adaptive Security+ learning system</div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-6">
-                <a href="https://github.com/zuciyazaki/zaki-security-tools" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-2 w-fit">
-                    💻 View Source Code on GitHub →
+                <a href="https://arsenal.zuciyazaki.com" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm font-semibold">
+                    <i class="fas fa-external-link-alt"></i> arsenal.zuciyazaki.com
                 </a>
             </div>
-        </div>
-    </section>
 
-    <!-- TryHackMe Badge -->
-    <section class="max-w-4xl mx-auto px-6 py-16 scroll-reveal">
-        <div class="text-center">
-            <h2 class="text-2xl font-bold mb-6 gradient-text">Current Progress</h2>
-            <div class="flex justify-center">
-                <img src="https://tryhackme-badges.s3.amazonaws.com/ZuciyaZaki.png" alt="TryHackMe Badge" class="rounded-lg border border-emerald-500/30">
+            <!-- Tools Showcase -->
+            <div class="bg-slate-800/30 border border-cyan-500/30 rounded-lg p-6 card-hover">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-wrench text-3xl text-cyan-400"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-100">Tools Showcase</h3>
+                            <div class="text-sm text-slate-400">React • Interactive • Multi-Tool</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-4 text-sm">
+                    Interactive web platform showcasing hash identifier, Base64 encoder/decoder, common port reference, and more security utilities for daily SOC work.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded text-xs">React</span>
+                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">JavaScript</span>
+                    <span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs">VPS Deployed</span>
+                </div>
+                <a href="https://tools.zuciyazaki.com" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm font-semibold">
+                    <i class="fas fa-external-link-alt"></i> tools.zuciyazaki.com
+                </a>
             </div>
-            <div class="mt-6">
-                <a href="https://tryhackme.com/p/ZuciyaZaki" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold">
-                    View Full TryHackMe Profile →
+
+            <!-- Python CLI Tools -->
+            <div class="bg-slate-800/30 border border-purple-500/30 rounded-lg p-6 card-hover">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fab fa-python text-3xl text-purple-400"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-100">Python CLI Security Tools</h3>
+                            <div class="text-sm text-slate-400">Python • Rich Library • Terminal</div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="text-slate-300 mb-4 text-sm space-y-2">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-terminal text-cyan-400 mt-1"></i>
+                        <span><strong>zaki-john.py</strong> - Hash cracking reference & workflow guide</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-terminal text-cyan-400 mt-1"></i>
+                        <span><strong>zaki-msf.py</strong> - Metasploit exploit quick reference</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-terminal text-cyan-400 mt-1"></i>
+                        <span><strong>zaki-linux.py</strong> - 170+ Linux commands organized by category</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-terminal text-cyan-400 mt-1"></i>
+                        <span><strong>zaki-cert-mastery.py</strong> - Adaptive Security+ quiz system</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-terminal text-cyan-400 mt-1"></i>
+                        <span><strong>zaki-attack.py</strong> - Penetration testing workflow reference</span>
+                    </li>
+                </ul>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">Python 3</span>
+                    <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded text-xs">Rich</span>
+                    <span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs">Open Source</span>
+                </div>
+                <a href="https://github.com/zuciyazaki/zaki-security-tools" target="_blank" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 text-sm font-semibold">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Blog -->
+            <div class="bg-slate-800/30 border border-emerald-500/30 rounded-lg p-6 card-hover">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-blog text-3xl text-emerald-400"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-100">Learning Journey Blog</h3>
+                            <div class="text-sm text-slate-400">Documentation • Technical Writeups</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-4 text-sm">
+                    Documenting the cybersecurity learning journey with technical writeups, tool explanations, CTF walkthroughs, and honest reflections on the path to SOC analyst.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs">CTF Writeups</span>
+                    <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded text-xs">Tutorials</span>
+                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">Authentic</span>
+                </div>
+                <a href="https://blog.zuciyazaki.com" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 text-sm font-semibold">
+                    <i class="fas fa-external-link-alt"></i> blog.zuciyazaki.com
                 </a>
             </div>
         </div>
@@ -296,237 +385,156 @@
 
     <!-- Skills Section -->
     <section id="skills" class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Capabilities</h2>
-            <p class="text-slate-400 text-lg">What I've actually accomplished, not just what I "know"</p>
-        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 gradient-text text-center">Current Focus Areas</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Red Team -->
-            <div class="bg-slate-800/30 border border-red-500/30 rounded-lg p-6">
-                <div class="text-2xl mb-4">🔴</div>
-                <h3 class="text-xl font-bold text-red-400 mb-4">Red Team Experience</h3>
-                <ul class="space-y-2 text-sm text-slate-300">
-                    <li class="flex items-start gap-2">
-                        <span class="text-red-400 mt-1">•</span>
-                        <span>Completed 65+ TryHackMe offensive rooms</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-red-400 mt-1">•</span>
-                        <span>Practical Metasploit exploitation (30+ labs)</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-red-400 mt-1">•</span>
-                        <span>Password cracking (John, Hashcat, rockyou)</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-red-400 mt-1">•</span>
-                        <span>Web vulnerabilities (SQLi, XSS, IDOR)</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-red-400 mt-1">•</span>
-                        <span>Network scanning & reconnaissance</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Blue Team -->
-            <div class="bg-slate-800/30 border border-blue-500/30 rounded-lg p-6">
-                <div class="text-2xl mb-4">🔵</div>
-                <h3 class="text-xl font-bold text-blue-400 mb-4">Blue Team Foundation</h3>
-                <ul class="space-y-2 text-sm text-slate-300">
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-400 mt-1">•</span>
-                        <span>Incident Response methodology</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-400 mt-1">•</span>
-                        <span>Log analysis fundamentals</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-400 mt-1">•</span>
-                        <span>Threat detection concepts</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-400 mt-1">•</span>
-                        <span>Security monitoring workflows</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-400 mt-1">•</span>
-                        <span>Defense-in-depth principles</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Technical -->
-            <div class="bg-slate-800/30 border border-emerald-500/30 rounded-lg p-6">
-                <div class="text-2xl mb-4">🔧</div>
-                <h3 class="text-xl font-bold text-emerald-400 mb-4">Technical Toolkit</h3>
-                <ul class="space-y-2 text-sm text-slate-300">
-                    <li class="flex items-start gap-2">
-                        <span class="text-emerald-400 mt-1">•</span>
-                        <span>Python: Built 5+ security automation tools</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-emerald-400 mt-1">•</span>
-                        <span>Linux: Kali daily driver, 170+ commands</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-emerald-400 mt-1">•</span>
-                        <span>Web Dev: React, JavaScript, Tailwind</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-emerald-400 mt-1">•</span>
-                        <span>Labs: VirtualBox, VM infrastructure mgmt</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-emerald-400 mt-1">•</span>
-                        <span>Version Control: Git, GitHub workflows</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Unique Approach -->
-        <div class="mt-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-lg p-8">
-            <h3 class="text-xl font-bold text-purple-400 mb-4">💡 Unique Approach</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-300">
-                <div class="flex items-start gap-3">
-                    <div class="text-purple-400 text-xl">✓</div>
-                    <div>
-                        <div class="font-semibold">Strategic problem solver</div>
-                        <div class="text-sm text-slate-400">Not just tactical — I think systematically about root causes and solutions</div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Active Learning -->
+            <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-6 text-cyan-400 flex items-center gap-2">
+                    <i class="fas fa-graduation-cap"></i>
+                    Currently Studying
+                </h3>
+                <div class="space-y-3 text-slate-300">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-cyan-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Network Security & Packet Analysis</div>
+                            <div class="text-sm text-slate-400">Wireshark, tcpdump, network forensics</div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-pink-400 text-xl">✓</div>
-                    <div>
-                        <div class="font-semibold">Tool builder</div>
-                        <div class="text-sm text-slate-400">Create solutions rather than just consume existing tools with AI assistance</div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-purple-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Linux System Administration</div>
+                            <div class="text-sm text-slate-400">Command line, bash scripting, system hardening</div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-purple-400 text-xl">✓</div>
-                    <div>
-                        <div class="font-semibold">Out-of-the-box thinker</div>
-                        <div class="text-sm text-slate-400">Approach challenges from multiple angles to find creative solutions</div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-emerald-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Python for Security</div>
+                            <div class="text-sm text-slate-400">Automation, tool development, scripting</div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-pink-400 text-xl">✓</div>
-                    <div>
-                        <div class="font-semibold">Self-directed learner</div>
-                        <div class="text-sm text-slate-400">50+ day streak proves consistent execution without external pressure</div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-yellow-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Web Application Security</div>
+                            <div class="text-sm text-slate-400">OWASP Top 10, Burp Suite, vulnerability assessment</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-cyan-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Penetration Testing Fundamentals</div>
+                            <div class="text-sm text-slate-400">Metasploit, exploitation, post-exploitation</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-purple-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Web Development (React/JavaScript)</div>
+                            <div class="text-sm text-slate-400">Building security tools and portfolio sites</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-circle text-emerald-400 text-xs mt-2"></i>
+                        <div>
+                            <div class="font-semibold">Infrastructure & DevOps</div>
+                            <div class="text-sm text-slate-400">VPS management, Nginx, DNS, SSL/TLS</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Certifications Section -->
-    <section class="max-w-4xl mx-auto px-6 py-16 scroll-reveal">
-        <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8">
-            <h2 class="text-2xl font-bold mb-6 gradient-text">📜 Certification Journey</h2>
-            
-            <div class="space-y-4">
-                <div class="flex items-start gap-4">
-                    <div class="text-2xl">✅</div>
-                    <div class="flex-1">
-                        <div class="font-semibold text-slate-200">TryHackMe: Pre Security</div>
-                        <div class="text-sm text-emerald-400">Completed</div>
+            <!-- Certifications & Achievements -->
+            <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-6 text-purple-400 flex items-center gap-2">
+                    <i class="fas fa-trophy"></i>
+                    Certifications & Progress
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl">📜</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-slate-200">CompTIA Security+</div>
+                            <div class="text-sm text-cyan-400">In Progress</div>
+                            <div class="text-xs text-slate-500 mt-1">Target: Q1 2026</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl">🎯</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-slate-200">TryHackMe Achievements</div>
+                            <div class="text-sm text-purple-400">Rank: 99,610 (Top 6%)</div>
+                            <div class="text-sm text-cyan-400">90 Rooms Completed • 19 Badges</div>
+                            <div class="text-sm text-emerald-400">62-Day Streak (Unbroken)</div>
+                            <div class="text-xs text-slate-500 mt-1">Active since October 2025</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl">📅</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-slate-200">Planned Certifications</div>
+                            <div class="text-sm text-slate-400">Security Blue Team Level 1 (BTL1) - After Sec+</div>
+                            <div class="text-sm text-slate-400">Splunk Core Certified User - 2026</div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="flex items-start gap-4">
-                    <div class="text-2xl">✅</div>
-                    <div class="flex-1">
-                        <div class="font-semibold text-slate-200">TryHackMe: Cyber Security 101</div>
-                        <div class="text-sm text-emerald-400">Completed</div>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-4">
-                    <div class="text-2xl">🔄</div>
-                    <div class="flex-1">
-                        <div class="font-semibold text-slate-200">CompTIA Security+</div>
-                        <div class="text-sm text-cyan-400">In Progress - Practice scores improving (66% → 78%)</div>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-4">
-                    <div class="text-2xl">📅</div>
-                    <div class="flex-1">
-                        <div class="font-semibold text-slate-200">Security Blue Team Level 1 (BTL1)</div>
-                        <div class="text-sm text-slate-400">Planned - After Security+</div>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-4">
-                    <div class="text-2xl">📅</div>
-                    <div class="flex-1">
-                        <div class="font-semibold text-slate-200">Splunk Core Certified User</div>
-                        <div class="text-sm text-slate-400">Planned</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-8 pt-6 border-t border-slate-700 text-slate-300">
-                <p class="text-sm">
-                    I'm exploring both offensive (red team) and defensive (blue team) security. Starting with SOC Analyst Level 1, 
-                    but my goal is to become a well-rounded cybersecurity specialist who understands both sides of the fight.
-                </p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="max-w-4xl mx-auto px-6 py-16 scroll-reveal">
-        <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/30 rounded-lg p-8 md:p-12 text-center">
+        <div class="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-lg p-8 md:p-12 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Open to Opportunities</h2>
             
             <p class="text-lg text-slate-300 mb-8">
-                I'm seeking my first <strong class="text-emerald-400">SOC Analyst Level 1</strong> position starting 
-                <strong class="text-cyan-400">3-6 months after obtaining Security+ certification</strong>.
+                Seeking <strong class="text-cyan-400">SOC Analyst Level 1</strong> position starting 
+                <strong class="text-purple-400">Q2-Q3 2026</strong> after Security+ certification.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-2xl mx-auto">
                 <div class="flex items-start gap-3">
-                    <div class="text-emerald-400 mt-1">✓</div>
+                    <div class="text-cyan-400 mt-1">✓</div>
                     <div class="text-slate-300">
                         <div class="font-semibold">Proven daily dedication</div>
-                        <div class="text-sm text-slate-400">50+ day unbroken streak</div>
+                        <div class="text-sm text-slate-400">62-day unbroken streak</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="text-purple-400 mt-1">✓</div>
+                    <div class="text-slate-300">
+                        <div class="font-semibold">Top performer</div>
+                        <div class="text-sm text-slate-400">Top 6% on TryHackMe (Rank 99,610)</div>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="text-cyan-400 mt-1">✓</div>
                     <div class="text-slate-300">
-                        <div class="font-semibold">Hands-on experience</div>
-                        <div class="text-sm text-slate-400">65+ labs completed</div>
+                        <div class="font-semibold">Hands-on labs</div>
+                        <div class="text-sm text-slate-400">90 rooms • 19 badges earned</div>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
-                    <div class="text-emerald-400 mt-1">✓</div>
+                    <div class="text-purple-400 mt-1">✓</div>
                     <div class="text-slate-300">
-                        <div class="font-semibold">Tool development</div>
-                        <div class="text-sm text-slate-400">Built 5+ working tools</div>
+                        <div class="font-semibold">Real projects</div>
+                        <div class="text-sm text-slate-400">5 Python tools + 3 production sites</div>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="text-cyan-400 mt-1">✓</div>
                     <div class="text-slate-300">
-                        <div class="font-semibold">Strategic mindset</div>
-                        <div class="text-sm text-slate-400">Problem-solving approach</div>
+                        <div class="font-semibold">Infrastructure experience</div>
+                        <div class="text-sm text-slate-400">VPS, DNS, SSL, Nginx deployment</div>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
-                    <div class="text-emerald-400 mt-1">✓</div>
-                    <div class="text-slate-300">
-                        <div class="font-semibold">Dual perspective</div>
-                        <div class="text-sm text-slate-400">Red & blue team knowledge</div>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <div class="text-cyan-400 mt-1">✓</div>
+                    <div class="text-purple-400 mt-1">✓</div>
                     <div class="text-slate-300">
                         <div class="font-semibold">Flexible location</div>
                         <div class="text-sm text-slate-400">Remote, hybrid, or on-site</div>
@@ -536,23 +544,26 @@
             
             <!-- Contact Buttons -->
             <div class="flex flex-wrap justify-center gap-4 mb-6">
-                <a href="mailto:dominicmetz@me.com" class="px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center gap-2">
-                    📧 Email Me
+                <a href="mailto:[email protected]" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Email Me
                 </a>
                 <a href="https://www.linkedin.com/in/dominic-metz-642519266/" target="_blank" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold transition-colors flex items-center gap-2">
-                    💼 LinkedIn
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </div>
             
             <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
-                <a href="https://github.com/zuciyazaki" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-2">
-                    💻 GitHub Profile
+                <a href="https://github.com/zuciyazaki" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+                    <i class="fab fa-github"></i> GitHub Profile
                 </a>
-                <a href="https://tryhackme.com/p/ZuciyaZaki" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-2">
-                    🎯 TryHackMe Profile
+                <a href="https://github.com/zuciyazaki/zaki-security-tools" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+                    <i class="fas fa-code"></i> CLI Tools Repo
                 </a>
-                <a href="https://tools.zuciyazaki.com" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-2">
-                    🔧 Security Tools
+                <a href="https://tryhackme.com/p/ZuciyaZaki" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+                    <i class="fas fa-bullseye"></i> TryHackMe
+                </a>
+                <a href="https://arsenal.zuciyazaki.com" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+                    <i class="fas fa-shield-alt"></i> Arsenal
                 </a>
             </div>
         </div>
@@ -562,31 +573,22 @@
     <footer class="border-t border-slate-800 py-8 px-6 mt-20">
         <div class="max-w-6xl mx-auto text-center">
             <div class="flex items-center justify-center gap-2 mb-3">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center font-bold text-white text-sm">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
                     ZZ
                 </div>
                 <span class="font-bold gradient-text text-lg">Zuciya Zaki</span>
             </div>
             <p class="text-slate-500 text-sm mb-2">
-                Lion-Hearted, Pure | Cybersecurity Specialist in Training
+                SOC Analyst in Training | "That's the Zaki way."
             </p>
             <p class="text-slate-600 text-xs">
-                © 2024-2025 Dominic Metz | Built with dedication | One day at a time
+                © 2024-2026 Dominic Metz | Built with dedication | arsenal.zuciyazaki.com
             </p>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Calculate streak days (from start date to today)
-        const streakStartDate = new Date('2025-10-27'); // Adjust this to your actual start date
-        const today = new Date();
-        const daysPassed = Math.floor((today - streakStartDate) / (1000 * 60 * 60 * 24));
-        
-        // Update streak counter
-        document.getElementById('streak-counter').textContent = daysPassed + '+';
-        document.getElementById('timeline-day').textContent = 'Day ' + daysPassed;
-        
         // Scroll reveal animation
         const observerOptions = {
             threshold: 0.1,
