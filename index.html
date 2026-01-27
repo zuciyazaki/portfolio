@@ -137,7 +137,7 @@
             <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 mb-10 sm:mb-12 text-slate-300 px-2">
                 <div class="flex items-center justify-center gap-2">
                     <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
-                    <span class="text-sm"><span class="font-bold text-cyan-400">92-Day</span> Unbroken Streak</span>
+                    <span class="text-sm"><span class="font-bold text-cyan-400" id="streak-hero"></span> Unbroken Streak</span>
                 </div>
                 <div class="flex items-center justify-center gap-2">
                     <div class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></div>
@@ -266,7 +266,7 @@
                 </p>
                 
                 <p>
-                    My commitment: <strong class="text-cyan-400">62 consecutive days</strong> of learning and building. Top <strong class="text-purple-400">6% on TryHackMe</strong>. <strong class="text-emerald-400">90 rooms completed</strong>. Three production websites deployed. Five custom security tools built. Not because it's easy, but because <strong class="text-cyan-400">consistency compounds</strong>.
+                    My commitment: <strong class="text-cyan-400" id="streak-path"></strong> of learning and building. Top <strong class="text-purple-400">4% on TryHackMe</strong>. <strong class="text-emerald-400">101 rooms completed</strong>. Three production websites deployed. Five custom security tools built. Not because it's easy, but because <strong class="text-cyan-400">consistency compounds</strong>.
                 </p>
                 
                 <p>
@@ -486,8 +486,8 @@
                         <div class="flex-1 min-w-0">
                             <div class="font-semibold text-slate-200 text-sm sm:text-base break-word">TryHackMe Achievements</div>
                             <div class="text-xs sm:text-sm text-purple-400 break-word">Rank: 79,796 (Top 4%)</div>
-                            <div class="text-xs sm:text-sm text-cyan-400 break-word">101 rooms Completed • 25 badges</div>
-                            <div class="text-xs sm:text-sm text-emerald-400 break-word">91-Day Streak (Unbroken)</div>
+                            <div class="text-xs sm:text-sm text-cyan-400 break-word">101 Rooms Completed • 25 Badges</div>
+                            <div class="text-xs sm:text-sm text-emerald-400 break-word"><span id="streak-achievements"></span> (Unbroken)</div>
                             <div class="text-xs text-slate-500 mt-1">Active since October 2025</div>
                         </div>
                     </div>
@@ -520,7 +520,7 @@
                     <div class="text-cyan-400 mt-0.5 flex-shrink-0">✓</div>
                     <div class="min-w-0">
                         <div class="font-semibold text-slate-300 text-sm sm:text-base break-word">Proven daily dedication</div>
-                        <div class="text-xs sm:text-sm text-slate-400 break-word">92-day unbroken streak</div>
+                        <div class="text-xs sm:text-sm text-slate-400 break-word"><span id="streak-contact"></span> unbroken streak</div>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
@@ -562,9 +562,10 @@
             
             <!-- Contact Buttons -->
             <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-6">
-                <a href="mailto:[email protected]" class="px-5 sm:px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 text-sm sm:text-base">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
+                <button id="email-btn" onclick="handleEmail()" class="px-5 sm:px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer">
+                    <i class="fas fa-envelope" id="email-icon"></i> 
+                    <span id="email-text">Show Email</span>
+                </button>
                 <a href="https://www.linkedin.com/in/dominic-metz-642519266/" target="_blank" class="px-5 sm:px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-sm sm:text-base">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
@@ -605,9 +606,84 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript - AUTO STREAK CALCULATOR -->
     <script>
+        // =====================================================
+        // 🔥 AUTO-STREAK CALCULATOR - "That's the Zaki way!"
+        // =====================================================
+        // 
+        // This calculates your streak automatically every day.
+        // Based on your start date: October 27, 2025
+        // 
+        // TO RESET (if you ever break the streak):
+        // 1. Change STREAK_START_DATE to the new start date
+        // 2. Push to GitHub
+        // =====================================================
+        
+        const STREAK_START_DATE = new Date('2025-10-27'); // Your streak started Oct 27, 2025
+        
+        function calculateStreak() {
+            const today = new Date();
+            const timeDiff = today - STREAK_START_DATE;
+            const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            return daysDiff;
+        }
+        
+        function updateStreakDisplays() {
+            const streak = calculateStreak();
+            
+            // Hero section: "92-Day"
+            const heroEl = document.getElementById('streak-hero');
+            if (heroEl) heroEl.textContent = streak + '-Day';
+            
+            // Path section: "92 consecutive days"
+            const pathEl = document.getElementById('streak-path');
+            if (pathEl) pathEl.textContent = streak + ' consecutive days';
+            
+            // Achievements section: "92-Day Streak"
+            const achievementsEl = document.getElementById('streak-achievements');
+            if (achievementsEl) achievementsEl.textContent = streak + '-Day Streak';
+            
+            // Contact section: "92-day"
+            const contactEl = document.getElementById('streak-contact');
+            if (contactEl) contactEl.textContent = streak + '-day';
+        }
+        
+        // Run on page load
+        updateStreakDisplays();
+        
+        // =====================================================
+        // 📧 SECURE EMAIL REVEAL - No scrapers, no mailto popup
+        // =====================================================
+        let emailRevealed = false;
+        
+        function handleEmail() {
+            const user = 'careers';
+            const domain = 'dominicmetz.com';
+            const email = user + '@' + domain;
+            const text = document.getElementById('email-text');
+            const icon = document.getElementById('email-icon');
+            
+            if (!emailRevealed) {
+                // First click: reveal email
+                text.textContent = email;
+                icon.className = 'fas fa-copy';
+                emailRevealed = true;
+            } else {
+                // Second click: copy to clipboard
+                navigator.clipboard.writeText(email);
+                text.textContent = 'Copied!';
+                icon.className = 'fas fa-check';
+                setTimeout(() => {
+                    text.textContent = email;
+                    icon.className = 'fas fa-copy';
+                }, 2000);
+            }
+        }
+        
+        // =====================================================
         // Scroll reveal animation
+        // =====================================================
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
